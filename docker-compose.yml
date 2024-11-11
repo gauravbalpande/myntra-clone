@@ -1,0 +1,13 @@
+version: '3'
+services:
+  client:
+    image: gauravbalpande18/myntra-clone:client-latest
+    ports:
+      - "3000:3000"
+  server:
+    image: gauravbalpande18/myntra-clone:server-latest
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGODB_URI='mongodb+srv://gauravbalpande18:luYytyYszT3BEb01@cluster0.jcgin.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+      - JWT_SECRET='TestSecreatKey'
