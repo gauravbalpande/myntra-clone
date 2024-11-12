@@ -1,4 +1,4 @@
-version: '3'
+version: "3.9"
 services:
   client:
     image: gauravbalpande18/myntra-clone:client-latest
@@ -9,5 +9,5 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGODB_URI='mongodb+srv://gauravbalpande18:luYytyYszT3BEb01@cluster0.jcgin.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-      - JWT_SECRET='TestSecreatKey'
+      - MONGODB_URI= "mongodb+srv://gauravbalpande18:luYytyYszT3BEb01@cluster0.jcgin.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      - JWT_SECRET= "TestSecreatKey"
